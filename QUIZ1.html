@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>اختبار أساسيات الأمن السيبراني - بكالوريوس (25 سؤال)</title>
+  <style>
+    body{font-family: Arial, "Segoe UI", Tahoma, sans-serif; background:#f7f7f7; color:#222; padding:20px}
+    .container{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,0.06)}
+    h1{margin-top:0;text-align:center}
+    .q{padding:12px;border-radius:6px;margin-bottom:10px;border:1px solid #eee}
+    .question-text{font-weight:600;margin-bottom:8px}
+    label{display:block;padding:6px;border-radius:6px;cursor:pointer}
+    input[type="radio"]{margin-left:8px}
+    .correct{background-color:#c8e6c9 !important}
+    .wrong{background-color:#ffcdd2 !important}
+    .controls{display:flex;gap:10px;justify-content:center;margin-top:18px}
+    button{padding:10px 16px;border:none;border-radius:6px;cursor:pointer;font-weight:700}
+    #submitBtn{background:#1976d2;color:#fff}
+    #resetBtn{background:#eee}
+    #score{margin-top:12px;text-align:center;font-size:18px;font-weight:700}
+    .note{font-size:14px;color:#555;margin-bottom:6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>كويز: أساسيات الأمن السيبراني (25 سؤال)</h1>
+    <p class="note">ضع دائرة أمام الإجابة الصحيحة ثم اضغط زر <strong>SUBMIT</strong>. بعد الضغط ستصبح الإجابات الصحيحة باللون الأخضر والخاطئة باللون الأحمر.</p>
+
+    <form id="quizForm">
+
+      <!-- Questions 1..25 -->
+
+      <div class="q" id="q1">
+        <div class="question-text">1. ما هو التصيُّد (Phishing)؟</div>
+        <label><input type="radio" name="q1" value="a"> رسالة تحاول سرقة معلومات حساسة عبر انتحال موقع أو شخص</label>
+        <label><input type="radio" name="q1" value="b"> نوع من الفيروسات التي تحذف الملفات</label>
+        <label><input type="radio" name="q1" value="c"> تقنية لتشفير البيانات في الشبكة</label>
+      </div>
+
+      <div class="q" id="q2">
+        <div class="question-text">2. أي مما يلي علامة شائعة على رسالة تصيُّد؟</div>
+        <label><input type="radio" name="q2" value="a"> طلب معلومات شخصية أو كلمة مرور عبر رابط مشبوه</label>
+        <label><input type="radio" name="q2" value="b"> رسالة تأتي من صديق عبر الدردشة</label>
+        <label><input type="radio" name="q2" value="c"> تحديث منتظم من نظام التشغيل</label>
+      </div>
+
+      <div class="q" id="q3">
+        <div class="question-text">3. ما أهمية الأمن السيبراني للمؤسسات؟</div>
+        <label><input type="radio" name="q3" value="a"> حماية البيانات وتقليل الخسائر المالية والسمعة</label>
+        <label><input type="radio" name="q3" value="b"> زيادة حجم التخزين فقط</label>
+        <label><input type="radio" name="q3" value="c"> تحسين سرعة الإنترنت للمستخدمين</label>
+      </div>
+
+      <div class="q" id="q4">
+        <div class="question-text">4. ما المقصود بالهاكر (Hacker) بالمعنى العام؟</div>
+        <label><input type="radio" name="q4" value="a"> شخص يكتشف ثغرات أمنية وقد يستخدمها أو يبلغ عنها</label>
+        <label><input type="radio" name="q4" value="b"> موظف في شركة اتصالات فقط</label>
+        <label><input type="radio" name="q4" value="c"> جهاز كمبيوتر قديم</label>
+      </div>
+
+      <div class="q" id="q5">
+        <div class="question-text">5. أي مما يلي هو فيروس (Virus)؟</div>
+        <label><input type="radio" name="q5" value="a"> برنامج خبيث قادر على التكاثر وإصابة ملفات أخرى</label>
+        <label><input type="radio" name="q5" value="b"> موقع إلكتروني للتسوق</label>
+        <label><input type="radio" name="q5" value="c"> أداة رسم بياني</label>
+      </div>
+
+      <div class="q" id="q6">
+        <div class="question-text">6. كيف يمكن تجنب الوقوع في فخّ رسائل التصيُّد؟</div>
+        <label><input type="radio" name="q6" value="a"> عدم النقر على روابط غير موثوقة والتحقق من المرسل</label>
+        <label><input type="radio" name="q6" value="b"> مشاركة كلمة المرور مع الزملاء</label>
+        <label><input type="radio" name="q6" value="c"> تحميل مرفقات من أي مصدر</label>
+      </div>
+
+      <div class="q" id="q7">
+        <div class="question-text">7. ما هو الهدف الرئيسي من هجوم التصيُّد؟</div>
+        <label><input type="radio" name="q7" value="a"> سرقة بيانات اعتماد المستخدمين (مثل كلمات المرور)</label>
+        <label><input type="radio" name="q7" value="b"> تحسين جودة البريد الوارد</label>
+        <label><input type="radio" name="q7" value="c"> تسريع اتصال الشبكة</label>
+      </div>
+
+      <div class="q" id="q8">
+        <div class="question-text">8. ما الفرق بين فيروس وبرمجيات خبيثة (malware)؟</div>
+        <label><input type="radio" name="q8" value="a"> الفيروس نوع من البرمجيات الخبيثة لكنه يملك قدرة التكاثر</label>
+        <label><input type="radio" name="q8" value="b"> البرمجيات الخبيثة هي برمجيات مفيدة فقط</label>
+        <label><input type="radio" name="q8" value="c"> لا يوجد فرق</label>
+      </div>
+
+      <div class="q" id="q9">
+        <div class="question-text">9. أي من الإجراءات التالية يحسّن من مستوى الأمن الشخصي على الإنترنت؟</div>
+        <label><input type="radio" name="q9" value="a"> استخدام كلمات مرور قوية ومختلفة وتفعيل المصادقة الثنائية</label>
+        <label><input type="radio" name="q9" value="b"> استخدام نفس كلمة المرور لجميع الخدمات</label>
+        <label><input type="radio" name="q9" value="c"> تعطيل تحديثات النظام دائمًا</label>
+      </div>
+
+      <div class="q" id="q10">
+        <div class="question-text">10. ما هي علامة على أن موقع ويب قد يكون مزيفًا؟</div>
+        <label><input type="radio" name="q10" value="a"> عنوان URL يحتوي على أخطاء إملائية أو نطاق غريب</label>
+        <label><input type="radio" name="q10" value="b"> وجود قفل في شريط العنوان (https)</label>
+        <label><input type="radio" name="q10" value="c"> تصميم جميل للموقع</label>
+      </div>
+
+      <div class="q" id="q11">
+        <div class="question-text">11. ماذا تفعل المصادقة الثنائية (2FA)؟</div>
+        <label><input type="radio" name="q11" value="a"> تضيف طبقة أمان إضافية عبر رمز أو جهاز ثانٍ</label>
+        <label><input type="radio" name="q11" value="b"> تزيد سرعة تسجيل الدخول</label>
+        <label><input type="radio" name="q11" value="c"> تقلل من عدد الحسابات</label>
+      </div>
+
+      <div class="q" id="q12">
+        <div class="question-text">12. ما هو التخمين الصحيح لكلمة المرور (Brute force)؟</div>
+        <label><input type="radio" name="q12" value="a"> محاولة تخمين كلمة المرور عبر تجربة مجموعات كثيرة من الممكن</label>
+        <label><input type="radio" name="q12" value="b"> تحديث نظام التشغيل</label>
+        <label><input type="radio" name="q12" value="c"> تشفير الملفات</label>
+      </div>
+
+      <div class="q" id="q13">
+        <div class="question-text">13. لماذا التحديثات الأمنية مهمة؟</div>
+        <label><input type="radio" name="q13" value="a"> لأنها تصلح الثغرات وتمنع استغلالها</label>
+        <label><input type="radio" name="q13" value="b"> لأنها تزيد من مساحة التخزين</label>
+        <label><input type="radio" name="q13" value="c"> لأنها تعطّل الحاسوب</label>
+      </div>
+
+      <div class="q" id="q14">
+        <div class="question-text">14. ما المقصود بـ "هجوم هندسة اجتماعية"؟</div>
+        <label><input type="radio" name="q14" value="a"> خداع الأشخاص للحصول على معلومات أو الوصول إلى أنظمة</label>
+        <label><input type="radio" name="q14" value="b"> نوع من الفيروسات التي تعمل عبر الشبكة</label>
+        <label><input type="radio" name="q14" value="c"> قياس أداء الشبكة</label>
+      </div>
+
+      <div class="q" id="q15">
+        <div class="question-text">15. أي مما يلي يعد ممارسة سيئة من ناحية الأمن؟</div>
+        <label><input type="radio" name="q15" value="a"> كتابة كلمة المرور على ورقة ولصقها قرب الحاسوب</label>
+        <label><input type="radio" name="q15" value="b"> استخدام مدير كلمات مرور موثوق</label>
+        <label><input type="radio" name="q15" value="c"> تفعيل تحديثات النظام تلقائيًا</label>
+      </div>
+
+      <div class="q" id="q16">
+        <div class="question-text">16. ما هو الروابط المختصرة والمستخدمة في التصيُّد؟</div>
+        <label><input type="radio" name="q16" value="a"> روابط مخفية قصيرة تقود لمواقع ضارة</label>
+        <label><input type="radio" name="q16" value="b"> روابط رسمية للمؤسسات فقط</label>
+        <label><input type="radio" name="q16" value="c"> رابط لتحسين محركات البحث</label>
+      </div>
+
+      <div class="q" id="q17">
+        <div class="question-text">17. أي من هذه أنواع البرمجيات الخبيثة يطلب فدية لاستعادة الملفات؟</div>
+        <label><input type="radio" name="q17" value="a"> برامج الفدية (Ransomware)</label>
+        <label><input type="radio" name="q17" value="b"> برامج التجسس فقط</label>
+        <label><input type="radio" name="q17" value="c"> برنامج مضاد فيروسات</label>
+      </div>
+
+      <div class="q" id="q18">
+        <div class="question-text">18. ما ينبغي فعله إذا شككت أن رسالة بريد إلكتروني تصيُّدية؟</div>
+        <label><input type="radio" name="q18" value="a"> عدم فتح الروابط أو المرفقات والتحقق من المرسل</label>
+        <label><input type="radio" name="q18" value="b"> إعادة إرسالها إلى الجميع</label>
+        <label><input type="radio" name="q18" value="c"> حذف نظام التشغيل</label>
+      </div>
+
+      <div class="q" id="q19">
+        <div class="question-text">19. ما فائدة النسخ الاحتياطي (Backup) بانتظام؟</div>
+        <label><input type="radio" name="q19" value="a"> استعادة البيانات حال وقوع هجوم أو فقدانها</label>
+        <label><input type="radio" name="q19" value="b"> جعل الملفات أكثر عرضة للسرقة</label>
+        <label><input type="radio" name="q19" value="c"> زيادة احتمال الإصابة بفيروس</label>
+      </div>
+
+      <div class="q" id="q20">
+        <div class="question-text">20. ما هو "صيد المكونات" (spear phishing)؟</div>
+        <label><input type="radio" name="q20" value="a"> هجوم تصيُّد مخصّص يستهدف شخصًا أو جهة محددة</label>
+        <label><input type="radio" name="q20" value="b"> نوع من الفيروسات</label>
+        <label><input type="radio" name="q20" value="c"> أداة لتسريع الإنترنت</label>
+      </div>
+
+      <div class="q" id="q21">
+        <div class="question-text">21. أي مما يلي يساعد على تقليل خطر الإصابة بالفيروسات؟</div>
+        <label><input type="radio" name="q21" value="a"> تثبيت مضاد فيروسات وتحديثه بانتظام</label>
+        <label><input type="radio" name="q21" value="b"> فتح مرفقات من أي بريد</label>
+        <label><input type="radio" name="q21" value="c"> تعطيل الجدران النارية</label>
+      </div>
+
+      <div class="q" id="q22">
+        <div class="question-text">22. ماذا يعني "HTTPS" في عنوان الموقع؟</div>
+        <label><input type="radio" name="q22" value="a"> أن الاتصال بين المتصفح والموقع مشفّر وآمن نسبياً</label>
+        <label><input type="radio" name="q22" value="b"> أن الموقع مجاني فقط</label>
+        <label><input type="radio" name="q22" value="c"> أن الموقع خاص بالهواتف فقط</label>
+      </div>
+
+      <div class="q" id="q23">
+        <div class="question-text">23. من أخطار مشاركة معلوماتك الحساسة عبر الرسائل؟</div>
+        <label><input type="radio" name="q23" value="a"> سرقة الهوية والوصول غير المصرح به إلى الحسابات</label>
+        <label><input type="radio" name="q23" value="b"> زيادة سرعة الجهاز</label>
+        <label><input type="radio" name="q23" value="c"> تحسين جودة الصور</label>
+      </div>
+
+      <div class="q" id="q24">
+        <div class="question-text">24. ما الذي يجب فعله عند استخدام شبكة واي فاي عامة؟</div>
+        <label><input type="radio" name="q24" value="a"> تجنّب إجراء معاملات حساسة واستخدام VPN إن أمكن</label>
+        <label><input type="radio" name="q24" value="b"> مشاركة بيانات الدخول مع الغرباء</label>
+        <label><input type="radio" name="q24" value="c"> تعطيل المصادقة الثنائية</label>
+      </div>
+
+      <div class="q" id="q25">
+        <div class="question-text">25. ما هو الأسلوب الأفضل للتحقق من رابط قبل النقر عليه؟</div>
+        <label><input type="radio" name="q25" value="a"> تمرير المؤشر فوق الرابط لمشاهدة العنوان الكامل والتحقق منه</label>
+        <label><input type="radio" name="q25" value="b"> النقر مباشرة لمعرفة الصفحة</label>
+        <label><input type="radio" name="q25" value="c"> نسخ الرابط ومشاركته على الشبكات الاجتماعية</label>
+      </div>
+
+      <div class="controls">
+        <button type="button" id="submitBtn">SUBMIT</button>
+        <button type="reset" id="resetBtn">إعادة</button>
+      </div>
+
+      <div id="score"></div>
+
+    </form>
+  </div>
+
+  <script>
+    const correctAnswers = {
+      q1: 'a', q2: 'a', q3: 'a', q4: 'a', q5: 'a', q6: 'a', q7: 'a', q8: 'a', q9: 'a', q10: 'a',
+      q11: 'a', q12: 'a', q13: 'a', q14: 'a', q15: 'a', q16: 'a', q17: 'a', q18: 'a', q19: 'a', q20: 'a',
+      q21: 'a', q22: 'a', q23: 'a', q24: 'a', q25: 'a'
+    };
+
+    document.getElementById('submitBtn').addEventListener('click', function(){
+      let total = 25;
+      let score = 0;
+
+      for (let i = 1; i <= total; i++){
+        const qName = 'q' + i;
+        const qDiv = document.getElementById(qName);
+        // remove previous classes
+        qDiv.querySelectorAll('label').forEach(l => { l.classList.remove('correct','wrong'); });
+
+        const selected = document.querySelector('input[name="'+qName+'"]:checked');
+        if (!selected){
+          // mark all options wrong-looking (light red) if none selected
+          qDiv.querySelectorAll('label').forEach(l => l.classList.add('wrong'));
+          continue;
+        }
+        const answer = selected.value;
+        if (answer === correctAnswers[qName]){
+          // mark the selected label as correct
+          selected.closest('label').classList.add('correct');
+          score++;
+        } else {
+          // mark selected wrong and show correct option in green
+          selected.closest('label').classList.add('wrong');
+          // find correct radio and mark its label
+          const correctRadio = document.querySelector('input[name="'+qName+'"][value="'+correctAnswers[qName]+'"]');
+          if (correctRadio) correctRadio.closest('label').classList.add('correct');
+        }
+      }
+
+      const percent = Math.round((score/total)*100);
+      document.getElementById('score').textContent = `نتيجتك: ${score} من ${total} — (${percent}%)`;
+
+      // Scroll to score
+      document.getElementById('score').scrollIntoView({behavior: 'smooth'});
+    });
+
+    // When the form is reset, remove highlights and clear score
+    document.getElementById('quizForm').addEventListener('reset', function(){
+      document.querySelectorAll('.q label').forEach(l => l.classList.remove('correct','wrong'));
+      document.getElementById('score').textContent = '';
+    });
+
+    // Make labels clickable when input is clicked (for some browsers)
+    document.querySelectorAll('input[type=radio]').forEach(r => r.addEventListener('change', function(){
+      // remove highlights for this question when changed
+      const qDiv = this.closest('.q');
+      qDiv.querySelectorAll('label').forEach(l => l.classList.remove('correct','wrong'));
+    }));
+  </script>
+</body>
+</html>
